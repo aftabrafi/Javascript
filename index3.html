@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendlist Longest Name</title>
+</head>
+<body>
+    
+    <script>
+        function longestName(frndlist){
+            var name = "";
+            for(var i = 0; i < frndlist.length; i++){
+                if(name.length < frndlist[i].length){
+                    name = frndlist[i];
+                }
+            }
+            return name
+        }
+        document.write("<h1> The longest Name is: " + longestName(["Md. Nurul Aftab Rafi", "Nurul Akter", "Nurul Abser","Muktar Ahmed", "Abid Rahman"]) + "</h1>")
+    </script> 
+</body>
+</html>
